@@ -21,7 +21,7 @@ The JavaScript code in this sample shows a simple request for the subject of the
 This sample requires the following:  
 
   - Visual Studio 2013 with Update 5 or Visual Studio 2015.  
-  - A computer running Exchange 2013 with at least one email account, or an Office 365 account. You can sign up for [an Office 365 Developer subscription](http://aka.ms/o365-android-connect-signup) and get an Office 365 account through it.
+  - A computer running Exchange 2013 with at least one email account, or an Office 365 account. You can sign up for [an Office 365 Developer subscription](http://aka.ms/ro9c62) and get an Office 365 account through it.
   - Any browser that supports ECMAScript 5.1, HTML5, and CSS3, such as Internet Explorer 9, Chrome 13, Firefox 5, Safari 5.0.6, or a later version of these browsers.
   - Familiarity with JavaScript programming and web services.
 
@@ -83,7 +83,7 @@ The following are common errors that can occur when you use Outlook Web App to t
 <a name="additional-resources"></a>
 ## Additional resources ##
 
-- [Explore the EWS Managed API, EWS, and web services in Exchange](https://msdn.microsoft.com/en-us/library/office/jj536567(v=exchg.150).aspx)
+- [Explore the EWS Managed API, EWS, and web services in Exchange](https://msdn.microsoft.com/library/office/jj536567(v=exchg.150).aspx)
 - [makeEwsRequestAsync method](http://msdn.microsoft.com/library/2ec380e0-4a67-4146-92a6-6a39f65dc6f2)
 
 ## Copyright
