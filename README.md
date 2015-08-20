@@ -83,6 +83,7 @@ The following are common errors that can occur when you use Outlook Web App to t
 <a name="additional-resources"></a>
 ## Additional resources ##
 
+- [More Add-in samples](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-Add-in)
 - [Explore the EWS Managed API, EWS, and web services in Exchange](https://msdn.microsoft.com/library/office/jj536567(v=exchg.150).aspx)
 - [makeEwsRequestAsync method](http://msdn.microsoft.com/library/2ec380e0-4a67-4146-92a6-6a39f65dc6f2)
 
