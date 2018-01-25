@@ -1,6 +1,8 @@
 # Outlook add-in: Make an Exchange Web Service request from Outlook
 
-**Table of contents**
+The JavaScript code in this sample shows a simple request for the subject of the current email message. It demonstrates the steps required to create an Exchange Web Service (EWS) request and the best practices for making the request.
+
+## Table of contents
 
 * [Summary](#summary)
 * [Prerequisites](#prerequisites)
@@ -11,12 +13,9 @@
 * [Questions and comments](#questions)
 * [Additional resources](#additional-resources)
 
-<a name="summary"></a>
-##Summary
-The JavaScript code in this sample shows a simple request for the subject of the current email message. It demonstrates the steps required to create an Exchange Web Service (EWS) request and the best practices for making the request.
 
 <a name="prerequisites"></a>
-## Prerequisites ##
+## Prerequisites
 
 This sample requires the following:  
 
@@ -34,7 +33,7 @@ The sample solution contains the following files:
 - AppRead\Home\Home.js: The JavaScript file that handles requesting and using the EWS request. 
 
 <a name="codedescription"></a>
-##Description of the code
+## Description of the code
 
 The code that creates the EWS XML request includes two methods. The first method, `getSoapEnvelope()`, wraps a SOAP envelope around a web service request. Because the SOAP envelope is standard for all EWS requests, this method can be reused to wrap any EWS request.
 
@@ -54,27 +53,27 @@ The `callback` method in the sample displays the contents of the response in a s
 
 <a name="build"></a>
 ## Build and debug ##
-**Note**: The mail add-in will be activated on any email message in the user's Inbox. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample add-in.
+>**Note**: The mail add-in will be activated on any email message in the user's Inbox. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample add-in.
 
-1. Open the solution in Visual Studio. Press F5 to build and deploy the sample add-in.
+1. Open the solution in Visual Studio. Press **F5** to build and deploy the sample add-in.
 2. Connect to an Exchange account by providing the email address and password for an Exchange 2013 server.
 3. Allow the server to configure the mail account.
-4. Log on to the email account by entering the account name and password. 
+4. Log in to the email account by entering the account name and password. 
 5. Select a message in the Inbox.
 6. Wait for the add-in bar to appear over the message.
-7. In the add-in bar, click **MakeEWSRequest**.
-8. When the mail add-in appears, click the **Make EWS Request** button to request the subject of the current message from the Exchange server.
+7. On the add-in bar, press **MakeEWSRequest**.
+8. When the mail add-in appears, press **Make EWS Request** to request the subject of the current message from the Exchange server.
 9. Review the response XML returned by the request.
 
 <a name="troubleshooting"></a>
-##Troubleshooting
-The following are common errors that can occur when you use Outlook Web App to test a mail add-in for Outlook:
+## Troubleshooting
+The following are common errors that can occur when you use Outlook to test a mail add-in for Outlook:
 
 - The add-in bar does not appear when a message is selected. If this occurs, restart the application by selecting **Debug – Stop Debugging** in the Visual Studio window, then press F5 to rebuild and deploy the add-in. 
 - Changes to the JavaScript code may not be picked up when you deploy and run the add-in. If the changes are not picked up, clear the cache on the web browser by selecting **Tools – Internet options** and clicking the **Delete…** button. Delete the temporary Internet files and then restart the add-in. 
 
 <a name="questions"></a>
-##Questions and comments##
+## Questions and comments
 
 - If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/Outlook-Add-in-Javascript-MakeEWSRequest/issues).
 - Questions about Office Add-in development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
