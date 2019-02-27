@@ -1,3 +1,16 @@
+---
+topic: sample
+products:
+- Outlook
+- Office 365
+languages:
+- JavaScript
+extensions:
+  contentType: samples
+  technologies:
+  - Add-ins
+  createdDate: 8/11/2015 1:32:51 PM
+---
 # Outlook add-in: Make an Exchange Web Service request from Outlook
 
 **Table of contents**
