@@ -41,6 +41,7 @@ This sample requires the following:
 
 <a name="components"></a>
 ## Key components of the sample
+
 The sample solution contains the following files:
 
 - MakeEwsRequestManifest.xml: The manifest file for the Outlook add-in.
@@ -48,7 +49,7 @@ The sample solution contains the following files:
 - AppRead\Home\Home.js: The JavaScript file that handles requesting and using the EWS request. 
 
 <a name="codedescription"></a>
-##Description of the code
+## Description of the code
 
 The code that creates the EWS XML request includes two methods. The first method, `getSoapEnvelope()`, wraps a SOAP envelope around a web service request. Because the SOAP envelope is standard for all EWS requests, this method can be reused to wrap any EWS request.
 
@@ -67,8 +68,10 @@ The `callback()` method is called with a single parameter, `asyncResult`. The `a
 The `callback` method in the sample displays the contents of the response in a scrollable `div` element in the UI, but your code can use the response in more sophisticated ways.
 
 <a name="build"></a>
-## Build and debug ##
-**Note**: The mail add-in will be activated on any email message in the user's Inbox. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample add-in.
+## Build and debug
+
+> [!NOTE]
+> The mail add-in will be activated on any email message in the user's Inbox. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample add-in.
 
 1. Open the solution in Visual Studio. Press F5 to build and deploy the sample add-in.
 2. Connect to an Exchange account by providing the email address and password for an Exchange 2013 server.
@@ -81,28 +84,28 @@ The `callback` method in the sample displays the contents of the response in a s
 9. Review the response XML returned by the request.
 
 <a name="troubleshooting"></a>
-##Troubleshooting
+## Troubleshooting
+
 The following are common errors that can occur when you use Outlook Web App to test a mail add-in for Outlook:
 
 - The add-in bar does not appear when a message is selected. If this occurs, restart the application by selecting **Debug – Stop Debugging** in the Visual Studio window, then press F5 to rebuild and deploy the add-in. 
 - Changes to the JavaScript code may not be picked up when you deploy and run the add-in. If the changes are not picked up, clear the cache on the web browser by selecting **Tools – Internet options** and clicking the **Delete…** button. Delete the temporary Internet files and then restart the add-in. 
 
 <a name="questions"></a>
-##Questions and comments##
+## Questions and comments
 
-- If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/Outlook-Add-in-Javascript-MakeEWSRequest/issues).
-- Questions about Office Add-in development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
+- If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/office-js/issues).
+- Questions about Office Add-in development in general should be posted to [Microsoft Q&A](https://docs.microsoft.com/en-us/answers/topics/192521/office-addins-dev.html). Make sure that your questions or comments are tagged with [office-addins-dev].
 
-
-<a name="additional-resources"></a>
-## Additional resources ##
+ <a name="additional-resources"></a>
+## Additional resources
 
 - [More Add-in samples](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-Add-in)
 - [Explore the EWS Managed API, EWS, and web services in Exchange](https://msdn.microsoft.com/library/office/jj536567(v=exchg.150).aspx)
 - [makeEwsRequestAsync method](http://msdn.microsoft.com/library/2ec380e0-4a67-4146-92a6-6a39f65dc6f2)
 
 ## Copyright
-Copyright (c) 2015 Microsoft. All rights reserved.
 
+Copyright (c) 2022 Microsoft. All rights reserved.
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
